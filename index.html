@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cybermind — Comunidad de Ciberseguridad de Argentina</title>
+<meta name="description" content="Cybermind es la comunidad argentina de concientización, capacitación certificada e investigación en ciberseguridad para personas, empresas y gobiernos." />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<!-- ============ Seguridad: Content-Security-Policy ============ -->
+<meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' https://cdn.jsdelivr.net;
+  style-src 'self' https://api.fontshare.com https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.jsdelivr.net;
+  img-src 'self' data:;
+  connect-src 'self';
+  base-uri 'self';
+  form-action 'none';
+  object-src 'none';
+  frame-ancestors 'none';
+  upgrade-insecure-requests;
+" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Cybermind — Comunidad de Ciberseguridad de Argentina" />
+<meta property="og:description" content="Concientización, capacitación certificada, buenas prácticas e investigación en ciberseguridad para toda la Argentina." />
+<meta property="og:type" content="website" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,500,400&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="./base.css" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============================================================ HEADER ============================================================ -->
+<header class="header" id="site-header">
+  <div class="container header__inner">
+    <a href="#top" class="brand" aria-label="Cybermind, inicio">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 4 L39 13 L39 35 L24 44 L9 35 L9 13 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+        <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <line x1="24" y1="22" x2="16" y2="16"/>
+          <line x1="24" y1="22" x2="32" y2="16"/>
+          <line x1="24" y1="22" x2="24" y2="33"/>
+          <line x1="16" y1="16" x2="11.5" y2="13"/>
+          <line x1="32" y1="16" x2="36.5" y2="13"/>
+          <line x1="24" y1="33" x2="24" y2="38.5"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="24" cy="22" r="3"/>
+          <circle cx="16" cy="16" r="2"/>
+          <circle cx="32" cy="16" r="2"/>
+          <circle cx="24" cy="33" r="2"/>
+        </g>
+      </svg>
+      Cybermind
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <div class="nav__links" id="nav-links">
+        <a href="#que-es">Qué es</a>
+        <a href="#por-que">Por qué importa</a>
+        <a href="#que-hacemos">Qué hacemos</a>
+        <a href="#el-foco">El FoCo</a>
+        <a href="#sumate">Comunidad</a>
+      </div>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo claro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn--primary btn--sm" href="https://whatsapp.com/channel/0029VbD5H7d6LwHuShLWbj1X" target="_blank" rel="noopener noreferrer">Sumate</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Badge flotante de seguridad -->
+<button class="security-badge" id="security-badge-btn" type="button">
+  Sitio auditado · cero vulnerabilidades conocidas
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+</button>
+
+<main id="main">
+
+<!-- ============================================================ HERO ============================================================ -->
+<div id="top"></div>
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__grid-overlay"></div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="eyebrow">Comunidad Nacional · Argentina</span>
+      <h1>Construimos la comunidad de <em>ciberseguridad</em> que la Argentina necesita.</h1>
+      <p class="hero__lede">Cybermind reúne a profesionales, docentes y organizaciones para llevar concientización, capacitación certificada, buenas prácticas e investigación en seguridad informática a personas, empresas y gobiernos de todo el país.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="https://whatsapp.com/channel/0029VbD5H7d6LwHuShLWbj1X" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          Unirme al canal de WhatsApp
+        </a>
+        <a class="btn btn--secondary" href="mailto:parz1val93@proton.me">Escribir a la comunidad</a>
+      </div>
+
+      <div class="hero__meta" data-reveal>
+        <div class="hero__meta-item">
+          <strong id="stat-cert">438</strong>
+          <span>Incidentes CERT.ar 2024</span>
+        </div>
+        <div class="hero__meta-item">
+          <strong>+15%</strong>
+          <span>Interanual vs. 2023</span>
+        </div>
+        <div class="hero__meta-item">
+          <strong id="stat-ufeci">34.468</strong>
+          <span>Reportes UFECI 2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ QUÉ ES ============================================================ -->
+<section id="que-es">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">¿Qué es Cybermind?</span>
+      <h2 class="section-title">Una red formada por certificaciones oficiales, no por buenas intenciones.</h2>
+      <p class="section-lede">Cada persona que colabora en la Red de Cybermind está formada e instruida por certificaciones oficiales, cursos habilitados por academias o carreras afines — la seriedad técnica es condición de entrada, no un plus.</p>
+    </div>
+
+    <div class="card-grid" data-reveal>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Concientización y capacitación</h3>
+        <p>Formación continua respaldada por certificaciones oficiales y programas de academias reconocidas, no cursos improvisados.</p>
+        <span class="card__tag">// certificación oficial</span>
+      </article>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+        <h3>Educación en todos los niveles</h3>
+        <p>Trabajamos para que la educación en ciberseguridad llegue a todos los niveles educativos y también a entornos de educación no formal.</p>
+        <span class="card__tag">// formal + no formal</span>
+      </article>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 21v-4a4 4 0 014-4h8a4 4 0 014 4v4"/><circle cx="12" cy="7" r="4"/></svg>
+        <h3>Buenas prácticas</h3>
+        <p>Desarrollamos buenas prácticas de ciberseguridad aplicables a personas, empresas y gobiernos por igual.</p>
+        <span class="card__tag">// personas · empresas · gobiernos</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ POR QUÉ IMPORTA ============================================================ -->
+<section id="por-que" style="background: var(--color-surface-2);">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div>
+        <span class="eyebrow">¿Por qué importa?</span>
+        <h2 class="section-title">Los incidentes informáticos en Argentina no bajan la guardia.</h2>
+      </div>
+      <p class="section-lede">La superficie de ataque crece con cada trámite, pago y dato que se digitaliza. Estos son los números oficiales más recientes.</p>
+    </div>
+
+    <div class="stats-panel" data-reveal>
+      <div>
+        <div class="stat-row">
+          <div class="stat">
+            <strong>438</strong>
+            <span>Incidentes de ciberseguridad gestionados por CERT.ar en 2024, un 15% más que en 2023.</span>
+          </div>
+          <div class="stat">
+            <strong>34.468</strong>
+            <span>Reportes de delitos informáticos recibidos por la UFECI durante 2024 (+21,1% interanual).</span>
+          </div>
+          <div class="stat">
+            <strong>31%</strong>
+            <span>De los incidentes CERT.ar 2024 fueron phishing — la modalidad más reportada.</span>
+          </div>
+          <div class="stat">
+            <strong>61%</strong>
+            <span>De los incidentes de 2024 tuvieron como blanco al sector Estado.</span>
+          </div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="incidents-chart" role="img" aria-label="Gráfico de barras: incidentes informáticos registrados por CERT.ar en Argentina entre 2021 y 2024"></canvas>
+        </div>
+        <p class="chart-caption">Incidentes informáticos anuales gestionados por CERT.ar, Dirección Nacional de Ciberseguridad de Argentina. Fuentes: <a href="https://www.argentina.gob.ar/sites/default/files/2025/07/informe_cert-ar_2024.pdf" target="_blank" rel="noopener noreferrer">Informe CERT.ar 2024</a>, <a href="https://www.argentina.gob.ar/jefatura/innovacion-ciencia-y-tecnologia/centro-nacional-de-ciberseguridad/certar/informes/2023" target="_blank" rel="noopener noreferrer">Informe CERT.ar 2023</a> y <a href="https://www.argentina.gob.ar/noticias/informe-de-gestion-certar-2022" target="_blank" rel="noopener noreferrer">Informe de gestión CERT.ar 2022</a> (Argentina.gob.ar).</p>
+      </div>
+
+      <div>
+        <h3 style="font-size: var(--text-lg); font-weight: 700; margin-bottom: var(--space-5);">Modalidades más reportadas (2024)</h3>
+        <div class="threat-list">
+          <div class="threat-list__item">
+            <span class="threat-list__label">Fraude en línea (UFECI)</span>
+            <span class="threat-list__value">63%</span>
+          </div>
+          <div class="threat-list__item">
+            <span class="threat-list__label">Phishing (CERT.ar)</span>
+            <span class="threat-list__value">31%</span>
+          </div>
+          <div class="threat-list__item">
+            <span class="threat-list__label">Spam (CERT.ar)</span>
+            <span class="threat-list__value">21%</span>
+          </div>
+          <div class="threat-list__item">
+            <span class="threat-list__label">Compromiso de cuenta (CERT.ar)</span>
+            <span class="threat-list__value">19%</span>
+          </div>
+          <div class="threat-list__item">
+            <span class="threat-list__label">Usurpación de identidad (UFECI)</span>
+            <span class="threat-list__value">13,5%</span>
+          </div>
+          <div class="threat-list__item">
+            <span class="threat-list__label">Ransomware interanual (UFECI)</span>
+            <span class="threat-list__value">+20%</span>
+          </div>
+        </div>
+        <p class="chart-caption" style="margin-top: var(--space-6);">Fuente: <a href="https://www.fiscales.gob.ar/ciberdelincuencia/la-unidad-fiscal-especializada-en-ciberdelincuencia-informa-que-en-2024-se-registro-un-aumento-interanual-del-211-en-la-cantidad-de-reportes-de-delitos-informaticos/" target="_blank" rel="noopener noreferrer">Informe anual UFECI 2024</a>, Ministerio Público Fiscal de la Nación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ QUÉ HACEMOS ============================================================ -->
+<section id="que-hacemos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">¿Qué hacemos en Cybermind?</span>
+      <h2 class="section-title">Del diagnóstico a la acción concreta.</h2>
+    </div>
+
+    <div class="card-grid card-grid--4" data-reveal>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        <h3>Publicaciones y newsletter</h3>
+        <p>Confeccionamos escritos académicos y un newsletter periódico para mantener informado al lector sobre el ámbito de la seguridad informática.</p>
+      </article>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M18 8a3 3 0 10-2.8-4H15a3 3 0 000 6h.2M6 12a3 3 0 100 4M18 20a3 3 0 10-2.8-4"/><path d="M8.6 10.5l6.8-3.9M8.6 13.5l6.8 3.9"/></svg>
+        <h3>Canal de alertas</h3>
+        <p>Compartimos información y alertas del mundo de la ciberseguridad, minuto a minuto, a través de nuestro Canal de WhatsApp abierto.</p>
+      </article>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 10l-10-6L2 10l10 6 10-6z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+        <h3>Formación certificada</h3>
+        <p>Impulsamos trayectos de capacitación técnica sostenidos por certificaciones oficiales y programas de academias reconocidas.</p>
+      </article>
+      <article class="card">
+        <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <h3>Divulgación en comunidad</h3>
+        <p>Articulamos con otras comunidades informáticas del país y espacios como El FoCo para amplificar el alcance de nuestro trabajo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ EL FOCO ============================================================ -->
+<section id="el-foco" style="background: var(--color-surface-2);">
+  <div class="container">
+    <div class="callout" data-reveal>
+      <div>
+        <span class="callout__eyebrow">Espacio aliado</span>
+        <h2>El FoCo</h2>
+      </div>
+      <div>
+        <p>El FoCo es el espacio que la Asociación Gremial de Computación de Argentina construyó para articular al sindicato con las comunidades informáticas del país.</p>
+        <p>No es un espacio de formación ni de difusión: es un espacio de construcción política colectiva, donde quienes trabajan en el sector tecnológico pueden encontrarse, debatir y producir propuestas que coloquen la perspectiva de los trabajadores y las comunidades en el centro del debate sobre el futuro digital de Argentina.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ SUMATE / COMUNIDAD ============================================================ -->
+<section id="sumate">
+  <div class="container">
+    <div class="join" data-reveal>
+      <div class="join__inner">
+        <span class="eyebrow">Sumate a Cybermind</span>
+        <h2>No necesitás ser experta en ciberseguridad para empezar a formar parte.</h2>
+        <p>Sumate al Canal de WhatsApp para recibir alertas y novedades en tiempo real, seguinos en LinkedIn para conocer nuestras publicaciones, o escribinos directamente si querés colaborar con capacitación, investigación o divulgación.</p>
+        <div class="join__actions">
+          <a class="btn btn--primary" href="https://whatsapp.com/channel/0029VbD5H7d6LwHuShLWbj1X" target="_blank" rel="noopener noreferrer">Unirme al canal de WhatsApp</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/company/135328377/" target="_blank" rel="noopener noreferrer">Seguir en LinkedIn</a>
+          <a class="btn btn--secondary" href="mailto:parz1val93@proton.me">Contactar a la administración</a>
+        </div>
+      </div>
+
+      <div class="roles">
+        <div class="role-chip">
+          <strong>Divulgación</strong>
+          <span>Redacción y newsletter</span>
+        </div>
+        <div class="role-chip">
+          <strong>Capacitación</strong>
+          <span>Talleres y certificaciones</span>
+        </div>
+        <div class="role-chip">
+          <strong>Investigación</strong>
+          <span>Buenas prácticas y datos</span>
+        </div>
+        <div class="role-chip">
+          <strong>Comunidad</strong>
+          <span>Alertas y difusión</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="support-strip">
+      <div class="support-strip__text">
+        <h3>Apoyá el proyecto</h3>
+        <p>Cybermind se sostiene con el trabajo voluntario de su Red. Un aporte ayuda a cubrir infraestructura y materiales de capacitación.</p>
+      </div>
+      <a class="btn btn--secondary" href="https://link.mercadopago.com.ar/cybermindargentina" target="_blank" rel="noopener noreferrer">Donar vía Mercado Pago</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#top" class="brand" aria-label="Cybermind, inicio">
+          <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 4 L39 13 L39 35 L24 44 L9 35 L9 13 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+              <line x1="24" y1="22" x2="16" y2="16"/>
+              <line x1="24" y1="22" x2="32" y2="16"/>
+              <line x1="24" y1="22" x2="24" y2="33"/>
+            </g>
+            <g fill="currentColor">
+              <circle cx="24" cy="22" r="3"/>
+              <circle cx="16" cy="16" r="2"/>
+              <circle cx="32" cy="16" r="2"/>
+              <circle cx="24" cy="33" r="2"/>
+            </g>
+          </svg>
+          Cybermind
+        </a>
+        <p>Comunidad argentina de concientización, capacitación e investigación en ciberseguridad para personas, empresas y gobiernos.</p>
+      </div>
+
+      <div>
+        <h4>Comunidad</h4>
+        <ul>
+          <li><a href="#que-es">Qué es Cybermind</a></li>
+          <li><a href="#por-que">Por qué importa</a></li>
+          <li><a href="#que-hacemos">Qué hacemos</a></li>
+          <li><a href="#el-foco">El FoCo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://whatsapp.com/channel/0029VbD5H7d6LwHuShLWbj1X" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/company/135328377/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:parz1val93@proton.me">Administración</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Apoyo</h4>
+        <ul>
+          <li><a href="https://link.mercadopago.com.ar/cybermindargentina" target="_blank" rel="noopener noreferrer">Donar vía Mercado Pago</a></li>
+          <li><button type="button" id="security-footer-btn" style="text-align:left;">Política de seguridad</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Cybermind Argentina — Comunidad de ciberseguridad.</span>
+      <span>Sitio construido y auditado internamente por la Red Cybermind.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================ MODAL SEGURIDAD ============================================================ -->
+<div class="modal-overlay" id="security-modal" role="dialog" aria-modal="true" aria-labelledby="security-modal-title">
+  <div class="modal">
+    <div class="modal__head">
+      <h3 id="security-modal-title">Construido como lo auditaríamos</h3>
+      <button class="modal__close" id="security-modal-close" type="button" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <ul class="security-list">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Content-Security-Policy estricta: sin scripts inline, sin <code>eval</code>, orígenes externos explícitamente permitidos.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Cero dependencias de terceros con historial de CVEs activos; librerías fijadas a una versión exacta.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Sin formularios que envíen datos a servidores propios: no hay superficie de inyección server-side.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Todos los enlaces externos usan <code>rel="noopener noreferrer"</code> para evitar tabnabbing.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Sin almacenamiento local de datos sensibles ni cookies de terceros.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> HTTPS obligatorio en todos los recursos y enlaces salientes.</li>
+    </ul>
+    <p class="modal__foot">Este sitio se revisa de forma periódica junto con la Red de Cybermind. Si detectás una vulnerabilidad, reportala a <a href="mailto:parz1val93@proton.me" style="color: var(--color-primary);">parz1val93@proton.me</a>.</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js" defer></script>
+<script src="./app.js" defer></script>
+</body>
+</html>
