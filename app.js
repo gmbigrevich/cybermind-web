@@ -15,6 +15,8 @@
      Theme toggle (estado solo en memoria — sin localStorage)
      ============================================================ */
   var themeToggleBtn = document.getElementById('theme-toggle');
+  var moonIcon = themeToggleBtn ? themeToggleBtn.querySelector('.theme-toggle__moon') : null;
+  var sunIcon = themeToggleBtn ? themeToggleBtn.querySelector('.theme-toggle__sun') : null;
 
   function currentTheme() {
     return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
@@ -28,6 +30,15 @@
         'aria-label',
         toLight ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'
       );
+    }
+    if (moonIcon && sunIcon) {
+      if (theme === 'light') {
+        moonIcon.setAttribute('hidden', '');
+        sunIcon.removeAttribute('hidden');
+      } else {
+        sunIcon.setAttribute('hidden', '');
+        moonIcon.removeAttribute('hidden');
+      }
     }
     if (window.__cybermindChart) {
       updateChartTheme(window.__cybermindChart);

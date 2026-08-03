@@ -18,7 +18,6 @@
   base-uri 'self';
   form-action 'none';
   object-src 'none';
-  frame-ancestors 'none';
   upgrade-insecure-requests;
 " />
 <meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -79,7 +78,8 @@
       </div>
       <div class="nav__actions">
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo claro">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" hidden><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
         </button>
         <a class="btn btn--primary btn--sm" href="https://whatsapp.com/channel/0029VbD5H7d6LwHuShLWbj1X" target="_blank" rel="noopener noreferrer">Sumate</a>
         <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
@@ -167,7 +167,7 @@
 </section>
 
 <!-- ============================================================ POR QUÉ IMPORTA ============================================================ -->
-<section id="por-que" style="background: var(--color-surface-2);">
+<section id="por-que" class="section--alt">
   <div class="container">
     <div class="section-head section-head--split">
       <div>
@@ -204,7 +204,7 @@
       </div>
 
       <div>
-        <h3 style="font-size: var(--text-lg); font-weight: 700; margin-bottom: var(--space-5);">Modalidades más reportadas (2024)</h3>
+        <h3 class="threat-list__title">Modalidades más reportadas (2024)</h3>
         <div class="threat-list">
           <div class="threat-list__item">
             <span class="threat-list__label">Fraude en línea (UFECI)</span>
@@ -231,7 +231,7 @@
             <span class="threat-list__value">+20%</span>
           </div>
         </div>
-        <p class="chart-caption" style="margin-top: var(--space-6);">Fuente: <a href="https://www.fiscales.gob.ar/ciberdelincuencia/la-unidad-fiscal-especializada-en-ciberdelincuencia-informa-que-en-2024-se-registro-un-aumento-interanual-del-211-en-la-cantidad-de-reportes-de-delitos-informaticos/" target="_blank" rel="noopener noreferrer">Informe anual UFECI 2024</a>, Ministerio Público Fiscal de la Nación.</p>
+        <p class="chart-caption chart-caption--spaced">Fuente: <a href="https://www.fiscales.gob.ar/ciberdelincuencia/la-unidad-fiscal-especializada-en-ciberdelincuencia-informa-que-en-2024-se-registro-un-aumento-interanual-del-211-en-la-cantidad-de-reportes-de-delitos-informaticos/" target="_blank" rel="noopener noreferrer">Informe anual UFECI 2024</a>, Ministerio Público Fiscal de la Nación.</p>
       </div>
     </div>
   </div>
@@ -271,7 +271,7 @@
 </section>
 
 <!-- ============================================================ EL FOCO ============================================================ -->
-<section id="el-foco" style="background: var(--color-surface-2);">
+<section id="el-foco" class="section--alt">
   <div class="container">
     <div class="callout" data-reveal>
       <div>
@@ -381,7 +381,7 @@
         <h4>Apoyo</h4>
         <ul>
           <li><a href="https://link.mercadopago.com.ar/cybermindargentina" target="_blank" rel="noopener noreferrer">Donar vía Mercado Pago</a></li>
-          <li><button type="button" id="security-footer-btn" style="text-align:left;">Política de seguridad</button></li>
+          <li><button type="button" id="security-footer-btn" class="link-btn">Política de seguridad</button></li>
         </ul>
       </div>
     </div>
@@ -410,7 +410,7 @@
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Sin almacenamiento local de datos sensibles ni cookies de terceros.</li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> HTTPS obligatorio en todos los recursos y enlaces salientes.</li>
     </ul>
-    <p class="modal__foot">Este sitio se revisa de forma periódica junto con la Red de Cybermind. Si detectás una vulnerabilidad, reportala a <a href="mailto:parz1val93@proton.me" style="color: var(--color-primary);">parz1val93@proton.me</a>.</p>
+    <p class="modal__foot">Este sitio se revisa de forma periódica junto con la Red de Cybermind. Si detectás una vulnerabilidad, reportala a <a href="mailto:parz1val93@proton.me" class="link-accent">parz1val93@proton.me</a>.</p>
   </div>
 </div>
 
